@@ -1,0 +1,563 @@
+\documentclass[12p]{article}       
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{graphicx}       				% For å inkludere figurer.
+\usepackage{amsmath,amssymb} 				% Ekstra matematikkfunksjoner.
+\usepackage{siunitx}% Må inkluderes for blant annet å få tilgang til kommandoen \SI (korrekte måltall med enheter)
+\usepackage{float}
+\usepackage{geometry}
+
+
+\def\ps@pprintTitle{%
+\let\@oddhead\@empty
+\let\@evenhead\@empty
+\def\@oddfoot{}%
+\let\@evenfoot\@oddfoot}
+
+%	\sisetup{exponent-product = \cdot}      	% Prikk som multiplikasjonstegn (i steden for kryss).
+% 	\sisetup{output-decimal-marker  =  {,}} 	% Komma som desimalskilletegn (i steden for punktum).
+ %	\sisetup{separate-uncertainty = true}   	% Pluss-minus-form på usikkerhet (i steden for parentes). 
+\usepackage{booktabs}                     		% For å få tilgang til finere linjer (til bruk i tabeller og slikt).
+\usepackage[font=small,labelfont=bf]{caption}		% For justering av figurtekst og tabelltekst.
+
+% Disse kommandoene kan gjøre det enklere for LaTeX å plassere figurer og tabeller der du ønsker.
+\setcounter{totalnumber}{5}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\floatpagefraction}{0.35}
+\geometry{margin = 0.75in}
+
+\begin{document}
+
+\section*{Monday 14. Nov}
+
+\subsection*{Session 1 - Introduction to animal models and gene editing}
+The main reason to use animal models is to exploit the similarities between humans and other organisms, thus preventing the use of human test subjects.
+The similarities is maybe most present when embryos from different animals are compared, even though the adult individual does not look the same at all, the embryoes are nearly identical.
+It is a major step up from cell-like studies, as a whole organism can be used as a model.
+Animal welfare is very important, the three R's (replace, refine and reduce) is a nice rule of thumb.
+The animals range a wide variety of complexity, from the simple flatworm (Caenorhabidtis Elegans) to the more human-like rodent, the rat.
+
+The most "classic" animal, the rat, is a relatively human-like organism.
+They have a generally short life-span, speeding up experiments.
+However, the life span of rats in an experimental setting is considered long, when compared to flat-worm or fruit-flies.
+Recently, apparently less human-like animals have been used, as the flat-worm and zebra-fish.
+These animals do not look like humans, but we share a great deal of cellular and molecular path-ways.
+This, combined with small size and short life-spans make them excellent research animals in molecular and genetic studies.
+
+Gene editing has become a particullary powerfull tool when investigating diseases.
+The work-flow can for example start with a discovered gene attributed to a human disease (say an epidemologist recognize a particular trait in closely related individuals).
+The task at hand then becomes to implement the discovered gene in an animal model, either by knocking out the particular gene, overexpress it or a combination of these.
+It can also go the other way around, when scientists discover a mutation in a particular animal model that lead to a disease in the animal that resembles a human illness.
+
+Roughly, three types of genetic animal models exist:
+
+\begin{itemize}
+\item
+    Knock-out:These are the more extreme cases. 
+    The gene that is studied in the animal model is completely knocked out.
+\item
+    Transgenic: Here, a normal gene is substituted with a mutated variety of said gene.
+    This could be considered less extreme as it doesnt neccecary involve development of the animal.
+\item
+    Conditional knock-out: Highly specific knock-out allow us to delete a gene in a specific tissue.
+    This allow us to develop highly tailored animal models.
+\end{itemize}
+
+The tool that allow us to develop these animal models have evolved during the past years, with the introduction of the CRISPR/CAS9 technique as the main contributor.
+The technique is encountered everywhere in genetic research, and put short, it allow us to introduce highly specific DNA-double strand breaks.
+These breaks further allow to substitute, or completely cut out a gene expression with a high degree of specificity.
+
+\subsection*{Session 2 - High output screening and the zebra fish}
+
+\subsubsection*{High output screening}
+
+High output screening (HTS) is a highly advanced, highly useful technology. 
+In short, it is the classical biochemical test, combine compounds in a well and observe the outcome, on an industrial scale.
+This is achieved with robotics and a high degree of automatication.
+The HTS system consist of multiple parts, main system parts being the assay plate, robotic handling, compound storage, detection and data integrity.
+The assay plate should be standardized and fit to the other compartments; a much used format is the 384 well plate.
+The robot handling is an industrial robot that can transport and store the assay plates. 
+A critical part of the handling process is the liquid handling - now highly reffined techniques can use mechanical (sound) waves to dispence volumes down to 2.5 nl.
+The various compounds is stored in "libraries" that can stretch from a couple of hundreds to several millions of different compounds.
+This storage aspect means that a great deal of effort is used towards storing, to avoid degredation.
+
+\subsubsection*{The Zebra-fish}
+
+The zebra-fish was mentioned in the chapter of animal models, but was more thourough presented in its own session, and that it highly deserves.
+The zebra-fish is a vertebrate with highly genetic and physiological similarities with humans.
+It developes very rapidly, with a gestaltion time of XX weeks.
+Here also lies one of the greatest attributes of the zebra-fish - the development is ex-utero, with a transparent infant stage.
+This means we can follow the development of the individual in a very direct and nice manner, making it an excellent model for studying fetal development.
+Due to its small size, relatively small amount of compounds are needed, and the zebra-fish absorb it directly through skin and gills.
+This means we can place the fish (either adults or more likely, embyonic) in an enviroment containing the compund, and thats all that is needed.
+
+\subsection*{Session 3 - Pharmacology and the G-protein coupled receptors}
+
+Pharmacology is a large field that tries to answer a set of questions, mainly: How can a drug be \emph{effective} and \emph{selective}?
+For the drug to be selective, it is meant that it acts on the desired target, and preferably that target alone.
+The optimum scenario is naturally that the drug only works on the selected target, but this ideal is seldom met, and the reality is a trade-off between the optimal therapeuic effect and the minimal side-effects
+Drug targets are classified into various classes, large ones being receptors, ion-channles, transporters and enzymes. 
+These classes somtimes overlap.
+
+
+\section*{Tuesday 15. Nov}
+
+\subsection*{Session 1 - Inflammation and pluripotent stem-cells}
+
+Inflamation. 
+Interestingly, inflamation is not neccecary an infection, the infection is the \emph{cause} of the inflamtion.
+It is one of the bodies most quick and efficient protective response.
+The main "job" of the inflamation process can be summarized quite nicely in the "five Rs of inflamation":
+
+\begin{enumerate}
+    \item
+	Recognition 
+    \item
+	Recruitment 
+    \item
+	Removal
+    \item
+	Regulation
+    \item
+	Resolution
+\end{enumerate}
+
+The first step is recognicition, a foreign object must be identified.
+The situation with the foreign object is the most "classical" scenario when we think inflammation, but it does not have to be an element from "outside".
+Damaged tissue can also initiate an inflammation process, either caused by trauma or ischemia.
+The foreign object does not need to be a bacteria or virus, it could also be silica crystals or other non-biotic elements.
+Inflamation can also be triggered by an immune reaction due to allergies or body transplants.
+
+When the inflammation is initiated, some macroscopic symptons can be identified.
+These symptoms has been described since ancient times, and includes heat, redness, swelling, pain and less of function.
+The pain is maybe the less "intuitive" symptom, as it is little to do when the infection occures, however, it helps to "immobilize" so the body gets much needed rest.
+The microscopic scene is fairly complex and involves several cellular participants, but the main early mechanism is to recruit cells to deal with the damage. 
+
+\subsubsection{Pluripotent stem-cells}
+
+The talk was about stem-cells, introducing some concepts, posibilities, nomenclature and examples.
+There are two kinds of stem cells, embryonic stem cells and adult stem cells.
+The embryonic kind can divide indefinitely and can differentiate to every type of cell.
+Adult stem cells are more limited, they can regenerate
+
+\subsection*{Session 2 - Molecular pathgogenesis and tumor angiogenesis}
+
+\subsection*{Session 3 - Breast cancer}
+
+\section*{Wednesday 16. Nov}
+
+\subsection*{Session 1 - Introduction to imaging modalities}
+
+\subsection*{Session 2 - Cell based therapies - Lab work and work-flow}
+
+When developing new drugs, in a well functioning scientific community, strict regulations and documentation demand is an imperative.
+This is by no means restricted to drugs involving chemicals, but reaching also cell-based therapy, where there exist a large amount of rules and regulations.
+This regularities are in constant development as novel cellular therapies emerges.
+Personel, equipment, safety, standard operating procedures and storage all have their specific regulations, ensuring a safe and robust research, development and production enviroment.
+
+T-cell infiltration in tumor or the stroma has been identified (for quite some time ago) as prognostic factors for therapy end-points such as recurrence free survival, progression free survival and overall survival.
+T-cell in the micro-enviroment of the tumors significantly stratified patient groups in Non-small cell Lung cancer cohort, time to half fraction disease specific survival seperated with as much as 70 months.
+It is tempting then to do mRNA-profiling, identifying the immunologic signature, as it has been shown that surgery is less effective on survival with the immunsystem not involved - maybe pivoting to other treatments?
+However, the antigen accociiated with these processes are largerly unknown, except for some melanoma-cases.
+
+Profiling is one thing, another is active use of immunocells in cancer therapy.
+A number of different therapies are currently being investigated, some in the Department of Cellular Therapy.
+
+
+
+
+\subsection*{Session 3 - Patophysiology of exicatory diseases in the brain}
+
+Glutamate is a highly interesting biological molecule, on one hand it is a basic and abundant neutransmitter, on the other hand a very potent neurotoxin.
+The transmitting capabilities of glutamate was first described by Hayashy in 1954, when convolutions were observed when glutamate was injected into the brain or cartoid arteries of XX.
+This physiological transmission of glutamate is imperative for normal function of the nerve system.
+The glutamate is stores in vecicles in the synaptic synapse, are released into the region between the synapses and reaches receptors on the adjacent synapse.
+The glutamate are then quickly cleared out, stored shortly in the astrocyte for then to be transported back into the synaptic nerve as glutamine.
+Multiple glutamate receptors exist, and can be broadly categorized into three categories, AMPA-R, KAINATE-R and NMDA-R.
+Further, NMDA-R has three subtypes, and the primary source of calcium influx.
+The NMDA.-recetor consist of an N and C-terminal, and four M-groups on the membrane level.
+The response of the receptor is a three-step process.
+First, glutamat binds to the GluN2-unit, then GluN1 binds glycin, needed to open the Ca-channel.
+The last step is relase of magnesium which when bound blocks the channel.
+The relase of magnesium is facilitatet by AMPA-R receptors, and thus acts as a zeroth step for glutamate activation.
+A remaining point on the NMDA-receptors is the connection with the PDZ-containing scaffold protein, the PSD-95 family proteins.
+These proteins facilitate the insertion and anchoring of NMDA-receptors at synaptic sites, this plays a major role for the localization of them.
+
+Exicitotoxicity is a pathological process involving the NMDA and AMPA-receptors.
+The end-point of the process is severe neuron death.
+These events can be triggered by a stroke, when nerve cells around an ischemic core relases a large amount of glutamate upon death.
+The glutamate flows into the ischemic penumbrae, the area around the core that is not yet severely damaged.
+The transport system that clears out the glutamate is hindred, and the result is a massive overactivation of glutamate, leading to an excess and un-interupted influx of calsium.
+This leads in the next step to programmet cell death (apoptosis) and further brings damage to the organism.
+The details of the pathways leading to cell death from the influx of calcium is debated.
+They can be categorized into two main hypothesis:
+
+\begin{enumerate}
+\item
+The threshold theory, involving several proteins in separate pathways, main actors being CASPASE, PARP1 and PSD95-NOS. The excess of calsium determines the excitotoxicity.
+\item
+The specific route theory: More debated, a precise and highly specific (but not neccesarily critically large) amount of calcium influx cause cell death
+\end{enumerate}
+
+
+The neurotoxicity induced by glutamate is called excitotoxicity.
+
+\section*{Thursday 17. Nov}
+
+\subsection*{Session 1 - Imaging cardiovascular diseases in animals and patients}
+
+Imaging of muccle-cells during response is primemarly done by meassuring the calsium concentration in cytosol, giving an indication of muccle activity.
+This is done by using so-called calsium-2+-flurophores, e.g. molecules that give of light when binding to calsium ions.
+These calsium markers can work on two principles, one where the calsium-binding lead to an increase in fluorecence, the output can then be meassured as increased intensity.
+The second principle utilizes a shift in the fluorecence spectra when binding to calcium is present.
+The fluorephores has to be transported into the cell membrane, two used techniques are 
+
+\begin{enumerate}
+\item
+Using an ester-group bound to the fluorephores aloowing passage through the membrane.
+Then when transported through the membrane, esterase will cleave the ester-group off and the flurophores are in the cytosol.
+\item
+The second is more mechanic and straight forward - injection is done through a very small patch pipette.
+\end{enumerate}
+
+When detecting the calcium transition (calcium activity), several instruments are to our disposeal: 
+The relatively straight forward and cheap Wide-field imaging that can be used with both the single and double emission (intensity and spectrum shift) techniques. 
+A major drawback of this technique is that the fluorecence is recorded throughout the sample in all depths, meaning that several regions will be out of focus.
+Using confocal pinholes, the set-up is called confocal imaging and the planes out of focus can be "sorted out" and only the plane on foucus can be recorded.
+This allows a "depth" scan throughout the speciment and thus a 3D-reconstruction can be made.
+
+Throughout the cardiac-cells are the T-tubulus, infodlings of the cell membranes.
+In cells from patients with heart failures, theese tubules are disrupted, leading to a damaged flux of calcium.
+This disruption can be imaged by confocal microscopy, showing distinct pattern differences in non-healthy cells compared to normal cells.
+An end-goal is to use this information and bring the descrription of the pathology from the cellular to an organ-model, currently being studied by a mathematical model compared to a mouse-heart model.
+
+For imaging human patients in a clinical setting, the medical professional have multiple imaging modalities to his or hers disposial.
+It is therefor a very important for the clinician to decide which image modality that best suits the current situation.
+The initial examination, and also the most routinly done examnation done on the heart in general, is an echocardiography.
+Echocardiography, as in its name, means to write (graphein) the heart (cardio) with echoes (the ultrsound-technique).
+The examination can be done by any health care professional with minimal training, is very little invasive and requires nothing more than an ultrasound aparatus.
+The penetration depth of the ultrasounds is fairly short, but it is enough to take a good look at the heart.
+An added benefit of the ultrasound, is that when equiped with doppler-imaging capabilities, it is possible to quantify the velocity of the blood flow.
+This information is color coded for direction (e.g. one color for left-right flow and another for right-left) and can meassure the speed of blood flow, giving valuable information about the blood flow.
+Pathology to look for is a dilation of the heart (the heart has increased in size to overcompensate for some underlying malignency) or hypertrophy, a "thickening" of the heart.
+The last pathology can also be strictly physiological, as it is accociated with chronic excersise or pregnancy.
+A key parameter apart from dialtion and hypertrophy is ejection fraction, a meassure of the fraction of blood in the left ventricle that gets ejected in systole.
+
+The second most used, and much more invasive technique is coronary angiography.
+It is based on contrast X-ray where a catheteter with a contrast agent is inserted into the coronary artery, opened, and the flow is visualized with X-ray.
+The procedure is quite painfull for the patient.
+When the echocardiography images the heart itself, the coronary angiography images the coronary artery, the large artery that transports oxygenated blood into the heart muccles.
+The pathology encountered with this procedure are often obstructions of the artery, especially patients with ischemic heart disease. 
+
+Other image-based modalities used on the heart are PET-scans (most often with FDG) and MRI-scans, discribed elsewhere.
+
+\subsection*{Session 2 - Gut and liver inflammation and animal models in cancer}
+
+\subsubsection{Gut and liver inflamation}
+
+Our immune system is a complex system with numerous participants.
+The picture becomes vastly more complicated when we also know that there is a close collaboration between the immune system and the microbiome.
+The microbiota make out around ten to the fourteenth power of microbes.
+This is a substantial fraction of the number of cells in the organism.
+Add also to the complexity, one recons there exist more than 1000 different species in the gut.
+Although separated by a layer of epitelium, the immuno system and the microbiota shapes eachother, by exchange of molecules.
+A concept introduced by the speaker is the "GxE"-concept, meaning genes multiplied with enviroment.
+It highlights how the diversity of trait multiplies and adds up quickly, potentially a multitude of treatment related implications.
+Also worth noted is that the genetics are more or less constant, but the enviromental factors are highly versatile, and can be adjusted.
+
+An example of the interplay between microbiota, immune system, genetics and the enviroment is the inflamatory bowel disease, IBD.
+IBD can be categorized into two main diseases, Chrohns disease and Ulcerative colitis.
+Some findings indicates a strong heridetary factor in the development of IBD, but only 20 \% of the heritability is explained - meaning we are missing some part of the picture.
+A single gene disorder has been identified, but the majority of IBD-cases is believed to involve a multitude of genes and enviromental factors.
+The enviromental factor interplay has been shown by differences between populations separated by geography, and also an historical increase show that something clearly is going on.
+This is further backed up with knock-out mice that when exposed to a germ free enviroment developed little to no inflamation, whereas in a "normal" enviroment they received extensive inflamation.
+A wild type mouse did not show inflamation in any of the enviroments.
+
+Due to the direct contant between the liver and gut, inflamation in the liver, coming from the gut has been observed.
+
+\subsubsection{Animal models}
+
+The talk was about (large) animals and their use in cancer research.
+An interesting initial point was that in Norway, the vast majority of research animals are fish(!) due to our extensive salmon industry.
+The need for larger, more human-like organisms (not rodents, zebra-fish or flatworms) are the physiological disimilarities between these animals and humans.
+They dont not to be at the tissue, or organ-level, alot of cellular mechanisms are different from mice to humans as well.
+
+One curious situation presented, was a largely american phenomenon, where the use of dogs - an animal very seldom used in norway.
+The dog is quite important, it was the subject for the first (succsessful) heart transplant, coronary bypass, heart-lung machine and other cardio-ciculatory procedures.
+And, dogs get cancer.
+Owners of pet dogs have a 20-30 \& chance for their pets to develop cancer, an ilness previously not treated by veterinaries.
+However, due to the similarities of cancer in dogs and their counterparts in humans, a large system for pet donation to drug-trials developed, fueled by the wish from pet-owners to treat mans best friend.
+Dogs then can serve the pilot, pre-clinical phase and a drug can go directly from dog to phase one human trials, or in another case, a drug can go from first in dog, or first in human, through the dog before a phase 2 human trial, optimizing treatment knowledge.
+
+The speaker introduced his own grouping of mice experiments, 12 in total.
+
+\subsection*{Session 3 - Pancreatic beta-cells}
+
+The talk was about a sophisticated transplant procedure helping to control diabetes.
+The pancreas is an important organ in relation to numerous hormon regulation pathways, with the most known being the production of insulin.
+When the pancreas no longer can regulate the insulin, or the mechanism for insulin response is failing, a disease called diabetes erupts.
+This disease is a large, global problem.
+In a norwegian cohort study, one discovered that diabetes increases the mortality rate 3-5 times, and over 50 \% died due to acute and chronic complications (authors note: this should be worse in countries without proper health care).
+The islets of Lagerhans are the insulin-producing cells in the pancreas.
+Transplantation of these islets is an effective treatment of type 1 diabetes, with limited complications, when compared to insulin injections or full pancreas transplantation.
+The transplant procedure consist of removing pancreas tissue from a donor, the tissue is hacked into small pieces and further mechanically purified, to separate the exocrone pancreatic tissue (98 \%, the tissue we dont need) from the remaining endocrine tissue.
+These cells are then transfused into the receipient liver, where they recide.
+The process is formalized through the so-called "Edmonton protocol" which was developed in the late 90s.
+The outcome of this transplantation have increased in success throughout the years, and in a group treated between 2007 to 2010, 44 \& insulin independence was maintained 3 years after tranplantation.
+Major challenges for the therapy are a lack of donors and rejection of the islets due to immunologic reactions.
+This challenges is difficult to adress head on, as it has been shown that human and mice islets differ, initially preventing further studies of these islets in mice models.
+But, a team in Oslo has made progress with a humanized mouse model, and it sounds very promising. 
+
+
+\section*{Friday 18. Nov}
+
+\subsection*{Session 1 - Biobanks}
+
+The talk was about biobanks in general, with focus on norwegian projects involving bio-banks.
+Bio-banks is an emerging tool for the bio- and medical field.
+In short, it is a large storage facility of biological samples, hopefully well cetegorized.
+When enough meta-data is connected to the samples, they can provide the neccecary amount of data to not only pure biological research, but also link enviromental factors to find results concerning the vast and interconnected play between genetics and enviromental factors.
+This is true for both common diseases and rare genetic treats.
+Fields that also have the use for large bio-banks are drug-developement, and the study of bio-markers.
+
+An important organization that brings the nordic biobanks together is Nordic Biobank Network, whichj includes biobanks in Sweden, Norway, finland, Denmark, Iceland, the Farrow Islands and Estonia.
+On a more national level there is the Biobank Norway, consisting of nine biobanks from Bergen to Tromsø, coordinated by NTNU.
+The norwegian biobanks (authors note: are we bragging to much?) are charecterized by high quality in all levels (QA/QC/sample quality/personell and so on).
+There are several reason for biobanks to be a sucess in nordic countries, a research friendly population, health registries, but a key element is the personal identifier, a unique number attributed to each individual, making cross referencing between registries possible.
+One of (even though there are several) the largest and most known bio-bank-related population studies are the HUNT (Helseundersøkelsen i Sør-Trøndelag) studies, with HUNT4 starting autumn 2017.
+The study is vast with 220 000 screened with 126 000 of them screened with questionaire data, clinical examinations and blood sampling.
+In this group, over 8000 variables are store in the databank, making it a huge and unique project.
+The HUNT biobank store plasma, DNA, immortalized cells and other tissue samples in low temperature and automated storage facilities.
+Some results from the HUNT2 (95-97) have been linked to the Cancer Registry to show incidence of Cancer.
+
+When this large data material is present, it is possible to conduct research concerning precision medicine, where the genetic mark-up of the individual.
+More advanced (and also alot cheaper) techniques for sequencing DNA allow us to conduct such research, which were expanded upon in other talks.
+It is clear that bio-banks provide an essential part in this research.
+
+\subsection*{Session 2 - Imaging diseases}
+
+
+\section*{Monday 21. Nov}
+
+\subsection*{Session 1 - Personalized medicine}
+
+\subsubsection{Personalized medicine}
+
+The talk was an overview of the concept personalized medicine.
+Personalized medicine may be a bit of a misnomer, better words (and currently synonyms) could be stratified medicine, precision medicine or tailored medicine.
+Even though it is a reltively novel field of research, the idea and concept is not new at all, as variability in patients even inside the "classical groups" (e.g. patients sharing a common disease) large individual differences can be found, and it is not far fetched to think that these differences affect the treatment outcome.
+The idea got an initial large traction by the turn of the century, when the HUGO project managed to map out the total genomic profile for a single human individual.
+This was a major breakthrough for genetics, and sparked an immense optimism.
+However, the initial optimism was curbed by one major biological component, the expression of genes which is not uniqucly identified by the genome, and a financial, sequencing the genome was immencely expensive.
+But, this optimism is on its way back, as increased understanding of epi-genetics, developmentents in biological and hardware tools and an increasing amount of stored data will help us understand complex system we did not grasp 15 years ago.
+This opens a range of possibilities for screening for treatment sensitivity, disease burden and other indicators we can mtitgate with more stream-lined treatment.
+
+However, this optimism comes with a cost.
+When we are stratifying smaller and smaller populations, we loose a certain power from the evidence-based, the control group.
+The gold standard for treatment development is randomized double blind trials, and with personlized medicine with one patient, one group and one disease, do not give room for a control.
+This is maybe the hardest challenge to overcome, as it has to be met with a reshaping of how we look at the "best" way of developing new therapies.
+
+\subsubsection{Tumor Immun Evasion Mechanism}
+
+The second part of the talk was a look at how tumors evade the immune system.
+One of the "revised" hallmarks of cancer, is avoiding immune destruction.
+Several talks have expanded upon the subject, but this talk gave a nice general overview.
+One of the earliest indications of the tumor-immuno-relationship was described in the middle of the 1800s by Rudof Virchow that noticed leucocytes in tumor tissue.
+This lead to his hypothesis that chronic inflamation and cancer were strongly linked 
+
+\subsection*{Session 2 - Drug sensitivety in leukemia}
+
+\subsection*{Session 3 - T-cell therapies in cancer and cancer metabolism}
+
+\section*{Tuesday 22. Nov}
+\subsection*{Session 1 - Medical chemistry and drug development}
+\subsection*{Session 2 - Imaging disease - multiphoton imaging}
+\subsection*{Session 3 - Predictive medicine, epidomology}
+\section*{Wednesday 23. Nov}
+\subsection*{Session 1 - Venous thrombosis}
+\subsection*{Session 2 - DNA repair and epigenetics}
+\subsection*{Session 3 - Animal models in cardiovascular disease}
+\section*{Thursday 24. Nov}
+\subsection*{Session 1 - Structural biology}
+\subsection*{Session 2 - Colorectal cancer}
+\subsection*{Session 3 - Away}
+\section*{Friday 18. Nov}
+\subsection*{Session 1 - Beta-cells - scrap}
+
+T1D and T2D are complex diseases depending on a lot of factors - chronic conditions, lifestyle, in utero develepment, parental obesity (recent in nature), enviromental factors, nutrions, intertestional flora, aging (espicielly type 2)
+The human is a bad subject, long lifespan, ethical problems, legal issues and not many volunteers.
+In addition it is long generation time and small number of offsprings.
+No possibility of genetic manipulation, and highly variable background and variable life-style.
+Humans have bad dicipline.
+
+Alternative is to go in vitro.
+Take iPSC, take different conscription factors and end up with a mature $\beta$-cell (7 stages)
+Possible to take the last steps (4-7) into a mouse model.
+Purity is a problem, along with: it is not systemic, it is inefficient, inaccurate and the output is very premature, we need more tools!
+
+Of course, the situation is complex, and no perfect tool is present.
+Different murine systems:
+
+\begin{enumerate}
+    \item
+	Ob/Ob mice - mutation of leptin, they gain weight rapidly and develop hyperglycemia, this is a T2D-model.
+    \item
+	Db/Db mice - mutation of leptin receptor, more severe symptoms than Ob/Ob, this is also a T2D-model
+    \item
+	Akita mice - mutation of insulin2 - note obese, selective toxicity depletion of beta-cells. Develops insulin dependent diabetes - resembles very much a T1D-case and is therefor used 
+\end{enumerate}
+
+Chemically induced abation - streptozotocine and alloxan - inject and wait for beta-cells to be depleted.
+Alot of problems, it is toxic, unspecific, inefficient and inaccurate.
+
+Transgenic models, harder and more expensive.
+Have a genome, add a transgene, specific or random. 
+Use a specific promoter that trigger transcription. 
+Then inject into a host-genome
+
+Tansgenic and toxin induced ablation - Diptheria toxin - and a DTA-system where you kill 75 \% of $\beta$-cells.
+Downsides: Patial and variable ablation efficiency and requires inducible systems.
+Use a promoter and mark a cell for killing - kill exceptionally specific and efficent (99\% $\beta$-cell loss).
+The downside of the promotor-method is that you need to reate a transfenic line for each promoter.
+
+The third model: Transgenic and specific gene targeting.
+
+Need to trace the cells, remove the stop-codon before the gene for a green fluorecence.
+Problem: Cells are irreversible traced from the moment they express the promoter.
+Can have two identical cells of unknown origin.
+We can use conditional cell-tracing to separate them from eachother.
+With this we can identify apparently identical processes, it is highly specific...
+
+Back to the diabetes:
+We can observe the outcome of the cell:
+
+\begin{enumerate}
+	\item
+	    We can have decreased proliferation
+	\item
+	    Dedifferentiation
+	\item
+	    Transdifferation - express second hormons
+	\item
+	    No label observed - death
+\end{enumerate}
+
+We can use cycline to kill the cells.
+Beta-cells not really dying but stop to produce insulin (real reason for diabetes)
+
+(lots of stuff)
+
+Things to remember:
+
+The 2 most prevaltnt types of Diabetes are complex disorrders and hard to charectirize (esp. in humans)
+
+There are many models (in vitro, spontaneus, chemical and transgenic)
+
+Cell death is not the only mechanism of beta-cell decay, dedifferation, preliferation, transdifferation etc.
+
+Genetic cell tracing esp. inducible systems are required to properly analyse cell fate
+
+\emph{Regenerative strategies} - proliferation, trans and redifferantion and neogenesis
+Different tissues can do one or several, or all.
+
+The innate and spontaneus B-cell regenerative
+Loss of 50-70 \% self-renoval by cell division, in extreme cases (99\% loss, conversion)
+
+The best is cell-division - as it is fast.
+Obecity and pregancy show increase in beta-cell mass.
+Beta-cell is able to increase proliferation upon stress and loss (due to for example injury).
+Chemical drugs can also induce proliferation, Glucose, CLP1 and S961 (this is specific and a dose dependent effect have been shown, human cells do not react to this drug).
+
+The second scenario is when you have almost no beta-cells left.
+The pancreatic islet have different cells, alpha, beta, PP cells and delta-cells.
+RIP-DTR ablation system to model T1D, killing 99\% of the beta-cells, leading immidiantly to diabetes. 
+The mice can regerate up to 70\% of the normal amount in adults.
+Use alpha-tracking show that the beta-like cells started as alpha-cells. 
+They stopped to express glucagon and started expressing insulin (hurray!)
+Not in humans (?)
+
+Cell interconversion also occurs after partial loss.
+Interconversion can appear in humans (in T2D not T1D)
+
+Summary: The dynamic of b-cell decay failure, alter the choice of the 
+
+\begin{enumerate}
+    \item
+	Human B-cell proliferate slower
+    \item
+	A minimum number is required for preliferation based strategies
+    \item
+	Some B-cell proliferate drugs were promising in mice 
+    \item
+	Total absence will trigger other mechanisms
+    \item
+\end{enumerate}
+
+
+\subsection*{Session 2 - At the interface of chemical kinetics and population biology}
+
+Post-atibiotic era: No new antibiotics (no new classes, classes have a common target and similar chemical structure).
+These classes often have similar resistenca mechanisms - resistance is a global problem that is being achnowledged.
+Talk of two diseases, Tuberculosis (big killer, global problem) and hospital acquired infections.
+Large drop in TB the last 100 years in europe.
+Pasteurisation did help as a bovine variety was dangerous.
+
+This is not to be seen in resource-poor countries. 
+Strongly resembles HIV-prevalence. 
+5-10 \% is infected but not sick, but with HIV you develop disease and starts to spread disease.
+HIV and TB act together.
+
+TB is a very underestimated disease - underestimated by 2-folds by the WHO.
+Biggest problem is multi-drug rsistant tubercolosis - worst in eastern europe. 
+
+Death toll in europa for HA-infections os much larger than multi-drug-resistance and HIV-infections (comparable to breast cancer).
+8 \% of hospital stays result in infection, of which half are multi-resistant.
+Treatment right away is very important.
+
+Erlich: Hit hard and early, little to no eveidence for this but we still do it.
+Important questions: 
+
+\begin{enumerate}
+    \item
+	How often?
+    \item
+	How much?
+    \item
+	How long?
+\end{enumerate}
+
+Problem to coonect the different levels of interaction.
+A simple model of bacterial killing: Look at the slides
+
+Set up an experiment to monitor replication in a single cell.
+THere is some kind of "lag", even after the drug has stopped being present, the bacterial wait a bit to start replicate again)
+There is a reservoir of unspecifically bound antibiotics.
+Antibiotics need to "leave" the cell.
+Explosive onset of growth: antibiotics "diluted" by replication.
+This can be used to explain how often one should give antibiotics.
+
+End-goal of their work is to stream-line drug-developement.
+
+\subsubsection{Systems biology}
+
+Combine the whole gene, protein and chemistry parts into a whole system.
+Two typical work-flow is to gather data, integrate and make into a correlative model so we can predict outcomes.
+
+Cancer evolves when the system get perturbed, as cancer is an error on the genetic level.
+
+Some causes, and effect - this can be translated to an interaction network.
+
+Now possible to sequence whole genom quite cheap.
+
+Also look at regulatory gene-coding, not just protein-coding.
+
+Trancriptions and proteomes are the key to underestand how disruption of this can cause cancer.
+
+
+
+
+
+\end{document}
+
