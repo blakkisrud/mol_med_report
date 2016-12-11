@@ -245,9 +245,37 @@ The two remaining hallmarks are "Tumor promotion inflammation" and "Genome insta
 
 \subsection*{Session 3 - Breast cancer}
 
+The talk was about breast cancer genomics, describing the work flow from risk loci to cancer phenotypes.
+Breast cancer is the most common disease in women, just in Norway there are 2 700 new cases each year, consisting of 25 \% of the total number of cancers.
+
+
 \section*{Wednesday 16. Nov}
 
 \subsection*{Session 1 - Introduction to imaging modalities}
+
+The talk was an introduction to various imaging modalities used in a clinical setting.
+Broadly the imaging modalities can be classified into three categories.
+1: The use of ionizing radiation from an external source that traverses the body and gets detected on the other side.
+This is used to classify tissue density in the image in the case of X-ray photograpgy, when a number of projections are constructed into a volumetric image we call it CT.
+The spatial resolution of this technique is comparably high, but depends on hard-ware; most modern implementation give sub mm resolution.
+
+The second category is using ionizing radiation from tracers inside the body to reconstruct a volumetric image of the distribution of the tracer.
+When this is done with a single emision photon isotope we called it SPECT, when it is done from two photons originating from an electron-positron annihilation we call it PET.
+The resolution is worse than the CT (on the mm-scale) for PET, and even worse for SPECT.
+A fundamental resolution problem for the PET is the random walk of the positron before annihilation.
+The obvious nice thing about the emission tomography techniques is that they can image an isotope tracer that can be, if chemistry allow it, linked to any compound, and their way through the body can be visualized.
+This allow us to study functional aspects of the body, differing from the much more "inherently anatomic" nature of the CT.
+This is however not entirely true, as you can use contrast agents for CT as well, and with spectral-CT you can differentiate between two image weighings to image two aspects at the same time (i.e. both anatomical and physiological (in the form of a contrast agent)).
+SPECT and PET are however almost useless without a hybrid CT-scan, primarily for doing attenuation correction.
+
+The third main category is imaging using the magnetic properties of water to visualize relaxation differences in tissue.
+Then it is called MR and it is a bit voodoo. 
+The soft-tissue differantion in MR is superb, and the added benefit of having no known risk of damage do to an examination (one encounters some heating of the tissue but it a minuscule amount) makes MR a great image option.
+One obvious limitation is tissue density problems, you do not have the same "direct tissue density read-out" as the CT and have to calibrate your system.
+The sensitive of MR compared to SPECT, PET and CT is also very low, requiring a long acquisition time.
+MR can also be used to investigate the chemical composition of a region of the body (typically a large voxel) that especially for identifying chemical signaling mediators in the brain is very useful.
+The use of these imaging modalities in a clinical oncology setting is described elsewhere.
+
 
 \subsection*{Session 2 - Cell based therapies - Lab work and work-flow}
 
@@ -257,15 +285,15 @@ This regularities are in constant development as novel cellular therapies emerge
 Personel, equipment, safety, standard operating procedures and storage all have their specific regulations, ensuring a safe and robust research, development and production environment.
 
 T-cell infiltration in tumor or the stroma has been identified (for quite some time ago) as prognostic factors for therapy end-points such as recurrence free survival, progression free survival and overall survival.
-T-cell in the micro-enviroment of the tumors significantly stratified patient groups in Non-small cell Lung cancer cohort, time to half fraction disease specific survival seperated with as much as 70 months.
-It is tempting then to do mRNA-profiling, identifying the immunologic signature, as it has been shown that surgery is less effective on survival with the immunsystem not involved - maybe pivoting to other treatments?
-However, the antigen associated with these processes are largerly unknown, except for some melanoma-cases.
+T-cell in the micro-environment of the tumors significantly stratified patient groups in Non-small cell Lung cancer cohort, time to half fraction disease specific survival separated with as much as 70 months.
+It is tempting then to do mRNA-profiling, identifying the immunologic signature, as it has been shown that surgery is less effective on survival with the immune system not involved - maybe pivoting to other treatments?
+However, the antigen associated with these processes are largely unknown, except for some melanoma-cases.
 
 Profiling is one thing, another is active use of immunocells in cancer therapy.
 A number of different therapies are currently being investigated, some in the Department of Cellular Therapy.
 Among these therapies is dendritic cell vaccines, where we extract monocytes from the patient, incubate them with the needed medium to cultivate effective dendritic cells, which then are administered into the patient.
 This is a multi-step process that requires strict attention to details in making a working GMP-production.
-Another treatment is adoptive cell therapy, where multipotent haemapoetic stem cells are extracted from a patient (or a donor), trained and reinfused into the patientA
+Another treatment is adoptive cell therapy, where multipotent haemapoetic stem cells are extracted from a patient (or a donor), trained and reinfused into the patient.
 The procedure is quite risky, relying on knocking out the patients immune response and serious adverse effects can arise.
 T-cells can be used in same manner, extracted, cultivated and reinfused.
 This cellular therapies implies a large (and shifting) amount of regulations.
@@ -471,11 +499,68 @@ The second part of the talk was a look at how tumors evade the immune system.
 One of the "revised" hallmarks of cancer, is avoiding immune destruction.
 Several talks have expanded upon the subject, but this talk gave a nice general overview.
 One of the earliest indications of the tumor-immuno-relationship was described in the middle of the 1800s by Rudof Virchow that noticed leukocytes in tumor tissue.
-This lead to his hypothesis that chronic inflammation and cancer were strongly linked 
+This lead to his hypothesis that chronic inflammation and cancer were strongly linked.
+Modern evidence also pointed towards this notion, as an increase in immunodeficient mice and humans with compromised immune system were observed.
+A third observation is that T-cell infiltration in tumors is associated with overall survival in cancer patients.
+
+Now, tumors has ways to evade the mechanism of the immune system.
+The first step, is to avoid being seen.
+This is achieved by a down-regulation of the cell surface proteins that recognize tumors as foreign objects.
+A second trick is to secrete immunosupressor proteins, growth factors that inhibits the immune system to take effect.
+Thirdly, the tumor over express a protein called IDO, this leads to a depleation of L-Trp in the cell microenciroment, this supresses T-cell activity and the tumor evades the immune system.
+The tumor cell can also express its own proteins on its surface that, when an effector cell is encountered, renders the attack useless.
+These "co-inhibitors" are a separate way of surviving the immunological attack.
+The last way of evasion is by recruting Tregs.
+The Tregs are regulatory T-cells, used to put a physiclogical damping on the immunoresponse.
+By having a large amount of Tregs in the microenviroment, the tumor hinders the immune system.
+
+This evasion can be remedied by a range of therapies.
+Common attributes is "boosting" of the immune system by tampering the tumors evasion strategies.
+Approaches is to use cytokines to  monoclonal antibodies to, to put it crudely, pump up the immune response.
+A therapeutic vaccine by activating T-cells is another approach.
+The last option mentioned by the speaker was checkpoint inhibitors, using proteins to block the checkpoints that regulates the T-cell activation.
+This tampers directly with the tumors ability to "turn off" the attack, and have been proven as a viable strategy in lung cancer, interesting.
+
 
 \subsection*{Session 2 - Drug sensitivity in leukemia}
 
 \subsection*{Session 3 - T-cell therapies in cancer and cancer metabolism}
+
+The idea of a cancer vaccine is not old, but for decades it proved futile to implement it in human subjects.
+As described earlier in this day, the immune system have mechanisms for handling cancer.
+The problem arises when the cancer evades the immune system, where they normally would have identified as foreign and eradicated.
+A break-through came when we learned to active the T-cells, however in a somewhat indirect fashion, by inhibiting the inhibitory pathways induced by the cancer.
+The recipe is simple, extract Tumor-infiltrating T-cells from the patient tumor, grow them outside the body and reintroduce them into the lymphodepleted patient.
+This have shown good response in a multi center trial in Israel and the US.
+
+A problem is that tumors express our own "normal" proteins, of which our immune system recognizes as "normal" and not foreign.
+However, we can antibodies by vaccinating mice, as the "normal" human proteins expressed by the tumor is foreign to the mouse, thus it produces antibodies to deal with them.
+However, this rarely cures patients.
+We want to make the antibodies better by chimeric antibody receptor therapy.
+This is done by collecting T-cells, arming them the chimeric antibody receptor which targets the cancer, and with the reinfusing it will effectively induce apoptosis in the tumor cells.
+This is a very promising therapy.
+
+Further on, this can be used to tackle on the "neo-antigens".
+The neo-antigens are anti gens that lies completely outside the normal human genome.
+These antigens are not affected by the local T-cell tolerance.
+
+\subsubsection{Cancer metabolism}
+
+One of the hallmarks of cancer is aerobic glycolysis inhibitors.
+This marks the step when tumors adjust to its low oxygen environment, and changing its metabolism.
+Low oxygen stimulates the tumor surroundings to up regulate factors for increased glycolysis, and angiogenic factors.
+This lead to the Warburg hypothesis, stating that, tumors glycolysis as their main way of generating energy-storage in the form of ATP.
+It was believed (now refuted) that tumor cells had impaired mitochondria that affected the Krebs cycle.
+
+However, as tumors strongly tends to get their ATP from glycolysis, attacking this synthesis seems like a nice way to treat cancer.
+One way of doing this is to block citrate lyase, an important step in the cycle.
+Another protein is pyruvate kinase, needed in the last step of glycolysis.
+It has many varieties, each with sub-forms.
+One of these forms, PKM2, more precisely the dimeric form, are overexpressed in tumor cells.
+Now, the tetramer-form is more involved in APT production, but, the dimeric form is important to form nucleases and protein synthesis.
+The PKM2 is also present in colo-rectal cancers, making it both a viable target for drugs and a nice bio marker, as it has been shown to be detected in stool samples.
+This test has proven to be highly sensitive.
+One problem however, is that it is also expressed under acute and chronic inflammatory condition.
 
 \section*{Tuesday 22. Nov}
 \subsection*{Session 1 - Medical chemistry and drug development}
@@ -815,22 +900,42 @@ This can be done by mathematically formulating the best time to start and stop a
 
 \subsubsection{Cancer}
 
-Combine the whole gene, protein and chemistry parts into a whole system.
-Two typical work-flow is to gather data, integrate and make into a correlative model so we can predict outcomes.
+The talk was about how to use a system approach to cancer the genome.
+A broad description of the approach was first described then a presentation of the speakers own work.
+The last part was a bit fuzzy for the author.
 
-Cancer evolves when the system get perturbed, as cancer is an error on the genetic level.
+Systemics in molecular biology tackles the problems that arises by assuming that a large and complex system can be understood through an understanding of the parts of the systems.
+This is the basis for all systemic approaches.
+Specifically for molecular biology, the speaker proclaims that a biological system is more than the sum of its parts.
+This means that it is the interactions between the different parts are as important as the parts themselves.
+A network approach tries to connect the genes, proteins and chemical reactions into a large network.
+This is done by gathering all available data, be it literature, gene expression, chemistry and so on, connect and integrate them together and see if good predictors can arise.
+If done correctly, this can simulate highly complex systems in a self-adjusting, nice and well behaved manner, if done incorrectly, it can make a large mess.
+The self regulatory part comes from constant updates with experimental data, adjusting if the system does not fit with reality.
 
-Some causes, and effect - this can be translated to an interaction network.
+Cancer can be though of in this context as a large system suffering from a perturbation.
+The perturbation starts in the genes, some mutation or aberration in the gene material, and the effect is gene expression and malignancy.
+In between is a large network connecting the cause (gene mutations) and effect (gene expression) and a nice model for predicting a certain outcome from a certain set of observations can be stated.
 
-Now possible to sequence whole genom quite cheap.
-
-Also look at regulatory gene-coding, not just protein-coding.
-
-Transcriptions and proteomes are the key to underestand how disruption of this can cause cancer.
+The author lacks the vocabulary to discuss their findings, but it looks interesting.
 
 
 
 
+
+
+%Combine the whole gene, protein and chemistry parts into a whole system.
+%Two typical work-flow is to gather data, integrate and make into a correlative model so we can predict outcomes.
+%
+%Cancer evolves when the system get perturbed, as cancer is an error on the genetic level.
+%
+%Some causes, and effect - this can be translated to an interaction network.
+%
+%Now possible to sequence whole genom quite cheap.
+%
+%Also look at regulatory gene-coding, not just protein-coding.
+%
+%Transcriptions and proteomes are the key to underestand how disruption of this can cause cancer.
 
 \end{document}
 
